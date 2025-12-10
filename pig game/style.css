@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.player {
+  text-align: center;
+  padding: 20px;
+  width: 180px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.player--active {
+  background: #e3f2fd;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+.player h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
+.total-score {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin: 10px 0;
+}
+
+.current-box {
+  display: flex;
+  justify-content: space-between;
+  background: #bbdefb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.dice {
+  font-size: 5rem;
+  margin: 10px 0;
+  height: 100px;  /* ⭐ حجم ثابت */
+  width: 100px;   /* ⭐ حجم ثابت */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;  /* ⭐ الصورة كلها تظهر */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn--roll {
+  background: #4caf50;
+  color: white;
+}
+
+.btn--hold {
+  background: #ff9800;
+  color: white;
+}
+
+.btn--new {
+  background: #f44336;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* فوز */
+.player--winner {
+  background: #fff8e1 !important;
+  transform: scale(1.03) !important;
+}
+
+.player--winner h2 {
+  color: #e65100;
+}
+
+/* إخفاء النرد في البداية */
+.dice.hidden {
+  display: none;
+}

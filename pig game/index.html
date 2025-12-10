@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>لعبة Pig</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- اللاعب 1 -->
+    <div class="player player--0 player--active">
+      <h2 class="pl1">player 1</h2>
+      <p class="total-score" id="score--0">0</p>
+      <div class="current-box">
+        <span>current</span>
+        <span id="current--0">0</span>
+      </div>
+    </div>
+
+    <!-- منتصف: النرد + الأزرار -->
+    <div class="center">
+    <img class="dice" id="dice" src="img/dice-1.png" alt="Dice" />      
+      <div class="buttons">
+        <button class="btn btn--new">Again</button>
+        <button class="btn btn--roll">Roll</button>
+        <button class="btn btn--hold">hold</button>
+      </div>
+    </div>
+
+    <!-- اللاعب 2 -->
+    <div class="player player--1">
+      <h2 class="pl2">player 2</h2>
+      <p class="total-score" id="score--1">0</p>
+      <div class="current-box">
+        <span>current</span>
+        <span id="current--1">0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
